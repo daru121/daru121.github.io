@@ -217,6 +217,17 @@
 /* Table Styles */
 .stock-list {
   margin: 20px 0;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.stock-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 16px;
 }
 
 .stock-table {
@@ -229,20 +240,23 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th {
   padding: 16px;
   text-align: left;
+  color: #666;
+  font-weight: 500;
   border-bottom: 1px solid #e0e0e0;
 }
 
-th {
-  background: #ffffff;
-  font-weight: 600;
-  color: #1a1a1a;
+td {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-td {
-  vertical-align: middle;
+.stock-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .stock-info img {
@@ -251,11 +265,38 @@ td {
   border-radius: 50%;
 }
 
-.action-buttons {
-  display: flex;
-  gap: 8px;
+/* Search Box Styles */
+.search-container {
+  position: relative;
+  width: 300px;
 }
 
+.search-input {
+  width: 100%;
+  padding: 8px 16px 8px 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  background: #f5f5f5;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+/* Select Styles */
+.period-select {
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #333;
+  cursor: pointer;
+  min-width: 120px;
+}
 
 /* Title styling */
 .popup-title {
@@ -339,397 +380,3 @@ td {
   font-weight: bold;
 }
 
-.confirm-button {
-  width: 100%;
-  padding: 12px;
-  background: #2196F3;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 24px;
-}
-
-.confirm-button:hover {
-  opacity: 0.9;
-}
-
-.sell-button {
-  width: 100%;
-  padding: 12px;
-  background: #F44336;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-.sell-button:hover {
-  opacity: 0.9;
-}
-
-/* Update popup title color for sell popup */
-#sellPopup .popup-title {
-  color: #F44336;
-}
-
-#sellPopup .preview-icon i {
-  color: #F44336;
-  background: #FFEBEE;
-}
-
-.proceeds-section,
-.profit-loss-section {
-  font-weight: bold;
-  color: #333;
-  margin: 8px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4px 0;
-}
-
-.btn-sell {
-  width: 100%;
-  padding: 12px;
-  background: #F44336;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-.btn-sell:hover {
-  opacity: 0.9;
-}
-
-
-.available-lot-section {
-  margin-bottom: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 4px;
-}
-
-.available-lot-section label {
-  display: block;
-  margin-bottom: 0;
-  color: #666;
-}
-
-.available-lot-value {
-  font-size: 16px;
-  font-weight: 500;
-  color: #333;
-  text-align: right;
-}
-
-.price-info {
-  text-align: right;
-}
-
-.price-change.positive {
-  color: #4CAF50;
-}
-
-.price-change.negative {
-  color: #F44336;
-}
-
-.profit-loss-value.negative {
-  color: #F44336;
-}
-
-.profit-loss-value.positive {
-  color: #4CAF50;
-}
-
-.order-type-select {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
-  background-color: #f5f5f5;
-}
-
-/* Adjust spacing for popup sections */
-.popup-body {
-    display: flex;
-    flex-direction: column;
-    gap: 12px; /* Reduced gap between sections */
-    padding: 0 16px; /* Add horizontal padding */
-}
-
-/* Adjust spacing for proceeds and profit/loss sections */
-.proceeds-section,
-.profit-loss-section {
-    font-weight: bold;
-    color: #333;
-    margin: 8px 0; /* Reduced margin */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 0; /* Add some vertical padding */
-}
-
-/* Adjust spacing for available lot section */
-.available-lot-section {
-    margin-bottom: 8px; /* Reduced margin to bring elements closer */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 4px;
-}
-
-.available-lot-section label {
-    display: block;
-    margin-bottom: 0;
-    color: #666;
-}
-
-/* Adjust spacing for lot section */
-.lot-section {
-    margin: 0; /* Remove default margin */
-    padding: 0;
-    position: relative;
-}
-
-.lot-section label {
-    display: block;
-    margin-bottom: 4px; /* Reduced margin */
-    color: #666;
-    text-align: left;
-}
-
-/* Adjust spacing for price section */
-.price-section {
-    margin-bottom: 12px; /* Reduced margin */
-}
-
-.price-section label {
-    display: block;
-    margin-bottom: 4px; /* Reduced margin */
-}
-
-/* Adjust popup content max-width */
-.popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px; /* Reduced padding */
-    border-radius: 12px;
-    width: 90%;
-    max-width: 380px; /* Reduced max-width */
-}
-
-/* Adjust expiry section spacing */
-.expiry-section {
-    margin-bottom: 12px; /* Reduced margin */
-}
-
-.expiry-section label {
-    display: block;
-    margin-bottom: 4px; /* Reduced margin */
-}
-
-/* Adjust popup footer spacing */
-.popup-footer {
-    margin-top: 16px; /* Reduced margin */
-    padding: 0 16px; /* Add horizontal padding */
-}
-
-/* Custom styling for range input (slider) */
-.lot-slider {
-    width: 100%;
-    height: 4px;
-    background: #e0e0e0;
-    border-radius: 2px;
-    outline: none;
-    -webkit-appearance: none;
-    margin: 8px 0; /* Reduced margin */
-}
-
-/* Styling for the slider thumb (handle) */
-.lot-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 24px;
-    height: 24px;
-    background: #2196F3;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background .15s ease-in-out;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    border: 2px solid white;
-}
-
-.lot-slider::-moz-range-thumb {
-    width: 24px;
-    height: 24px;
-    background: #2196F3;
-    border-radius: 50%;
-    cursor: pointer;
-    border: 2px solid white;
-    transition: background .15s ease-in-out;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-/* Styling for the slider track */
-.lot-slider::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 4px;
-    cursor: pointer;
-    background: transparent;
-    border-radius: 2px;
-}
-
-.lot-slider::-moz-range-track {
-    width: 100%;
-    height: 4px;
-    cursor: pointer;
-    background: transparent;
-    border-radius: 2px;
-}
-
-/* Active state */
-.lot-slider:active::-webkit-slider-thumb {
-    background: #1976D2;
-}
-
-/* Styling for the filled part of the slider */
-.lot-slider {
-    background: linear-gradient(to right, #2196F3 var(--slider-percentage), #e0e0e0 var(--slider-percentage));
-}
-
-/* Container for the slider */
-.lot-section {
-    margin: 20px 0;
-    padding: 0;
-}
-
-.lot-section label {
-    display: block;
-    margin-bottom: 8px;
-    color: #666;
-    text-align: left;
-}
-
-/* Styling for the lot value */
-.lot-value {
-    display: block;
-    text-align: left;
-    margin-top: 4px; /* Reduced margin */
-    margin-left: 4px;
-    font-weight: 500;
-    color: #333;
-}
-
-/* Add spacing after the slider section */
-.lot-section + .price-section {
-    margin-top: 16px; /* Add space between slider and price section */
-}
-
-/* Sale Complete Popup Styles */
-#saleCompletePopup .preview-content {
-    text-align: center;
-    padding: 32px 24px;
-}
-
-.close-button {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    cursor: pointer;
-}
-
-.close-button i {
-    font-size: 20px;
-    color: #666;
-}
-
-.success-icon {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 16px;
-}
-
-.success-icon i {
-    font-size: 48px;
-    color: #4CAF50;
-    padding: 16px;
-    background: #E8F5E9;
-    border-radius: 50%;
-}
-
-.complete-title {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 12px;
-    text-align: center;
-}
-
-.complete-message {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 24px;
-    text-align: center;
-}
-
-.complete-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.sell-more-button {
-    width: 100%;
-    padding: 12px;
-    background: #2196F3;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.view-inventory-button {
-    width: 100%;
-    padding: 12px;
-    background: #f5f5f5;
-    color: #333;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.sell-more-button:hover,
-.view-inventory-button:hover {
-    opacity: 0.9;
-}
-
-.buy-more-button {
-    width: 100%;
-    padding: 12px;
-    background: #2196F3;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.buy-more-button:hover {
-    opacity: 0.9;
-}
-
-/* Update title color for purchase complete */
-#purchaseCompletePopup .complete-title {
-    color: #333;
-}
