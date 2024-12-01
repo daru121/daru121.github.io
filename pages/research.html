@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+    <link rel="stylesheet" href="../assets/css/research.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <div class="logo">
+          <img src="../assets/img/goku.png" alt="Profile" />
+          <span>Mpok Surti</span>
+        </div>
+      
+        <ul class="nav-links">
+          <!-- Menu Home -->
+          <li class="menu-item">
+            <div class="menu-title">
+              <div class="menu-left">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+              </div>
+              <i class="fas fa-chevron-down arrow-icon"></i>
+            </div>
+            
+            <ul class="sub-menu">
+              <li><a href="../pages/overview-sektor.html">Overview Sektor</a></li>
+              <li><a href="../index.html">Overview Stock</a></li>
+            </ul>
+          </li>
+      
+            <!-- Menu Overview -->
+            <li class="menu-item">
+              <div class="menu-title">
+                <div class="menu-left">
+                  <i class="fas fa-arrow-trend-up"></i>
+                  <span>Profit</span>
+                </div>
+                <i class="fas fa-chevron-down arrow-icon"></i>
+              </div>
+              <ul class="sub-menu">
+                <li><a href="../pages/news.html">News</a></li>
+                <li><a href="../pages/research.html">Research</a></li>
+                <li><a href="../pages/chat-bot.html">Chatbot</a></li>
+              </ul>
+            </li>
+          </li>
+
+            <li class="nav-item">
+              <a href="../pages/subscription.html">
+                  <i class="fas fa-money-check"></i>
+                  <span>Subscription</span>
+              </a>
+          </li>
+          
+          <li class="nav-item">
+              <a href="../pages/portfolio.html">
+                  <i class="fas fa-user"></i>
+                  <span>Portofolio</span>
+              </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../pages/inventory.html">
+              <i class="fas fa-clipboard-check"></i>
+                <span>Inventory</span>
+            </a>
+        </li>
+          
+          <li class="nav-item">
+              <a href="../pages/setting.html">
+                  <i class="fas fa-cog"></i>
+                  <span>Setting</span>
+              </a>
+          </li>
+      </ul>
+
+          <!-- Pindahkan bottom-links ke sini, setelah nav-links -->
+          <ul class="nav-links bottom-section">
+            <li class="nav-item">
+              <a href="../pages/helpcentre.html" class="nav-link">
+              <i class="fas fa-question-circle"></i>
+              <span>Help Centre</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../pages/contact-us.html" class="nav-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contact us</span>
+              </a>
+            <li class="nav-item logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Log out</span>
+            </li>
+          </ul>
+        </nav>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Profile -->
+        <div class="profile">
+          <img src="../assets/img/goku.png" alt="Profile">
+          <span>Mpok Sarti</span>
+        </div>
+
+        <!-- Search dan Period selector -->
+        <div class="header-section">
+          <div class="search-period-container">
+            <div class="search-container">
+              <i class="fas fa-search search-icon"></i>
+              <input type="text" class="search-input" placeholder="Search">
+            </div>
+        
+            <div class="period-selector">
+              <button class="period-btn" onclick="setActivePeriod(this)">Month</button>
+              <button class="period-btn" onclick="setActivePeriod(this)">Quarter</button>
+              <button class="period-btn" onclick="setActivePeriod(this)">Year</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="category-container">
+          <div class="category-item">
+            <div class="category-icon academy-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <span class="category-name">Academy</span>
+          </div>
+          
+          <div class="category-item">
+            <div class="category-icon unboxing-icon">
+              <i class="fas fa-box-open"></i>
+            </div>
+            <span class="category-name">Unboxing</span>
+          </div>
+          
+          <div class="category-item">
+            <div class="category-icon events-icon">
+              <i class="fas fa-broadcast-tower"></i>
+            </div>
+            <span class="category-name">Events</span>
+          </div>
+          
+          <div class="category-item">
+            <div class="category-icon snips-icon">
+              <i class="fas fa-newspaper"></i>
+            </div>
+            <span class="category-name">Snips</span>
+          </div>
+        </div>
+
+        <!-- Articles -->
+        <div class="article-list">
+          <!-- Article 1 -->
+          <div class="article-item">
+            <img src="https://img.okezone.com/content/2018/01/26/481/1850456/mana-lebih-sehat-menulis-dengan-tangan-atau-mengetik-wzHoSO82sQ.jpg" alt="Article" class="article-image">
+            <div class="article-content">
+              <div>
+                <h3 class="article-title">Penn's Expanding Political Climate Gears Up For 2020 Election</h3>
+                <div class="article-meta">
+                  <span>
+                    <i class="fas fa-user"></i>
+                    Craig Bator
+                  </span>
+                  <span>
+                    <i class="fas fa-calendar"></i>
+                    27 Dec 2020
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="article-item">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3" alt="Trading Platform" class="article-image">
+            <div class="article-content">
+              <div>
+                <h3 class="article-title">Things To Look For In A Financial Trading Platform</h3>
+                <div class="article-meta">
+                  <span>
+                    <i class="fas fa-user"></i>
+                    Craig Bator
+                  </span>
+                  <span>
+                    <i class="fas fa-calendar"></i>
+                    27 Dec 2020
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="article-item">
+            <img src="https://images.unsplash.com/photo-1552581234-26160f608093" alt="Hardwork" class="article-image">
+            <div class="article-content">
+              <div>
+                <h3 class="article-title">The Only Thing That Overcomes Hard Luck Is Hardwork</h3>
+                <div class="article-meta">
+                  <span>
+                    <i class="fas fa-user"></i>
+                    Craig Bator
+                  </span>
+                  <span>
+                    <i class="fas fa-calendar"></i>
+                    27 Dec 2020
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 4 -->
+          <div class="article-item">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Success" class="article-image">
+            <div class="article-content">
+              <div>
+                <h3 class="article-title">Success Is Not A Good Teacher Failure Makes You Humble</h3>
+                <div class="article-meta">
+                  <span>
+                    <i class="fas fa-user"></i>
+                    Craig Bator
+                  </span>
+                  <span>
+                    <i class="fas fa-calendar"></i>
+                    27 Dec 2020
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 5 -->
+          <div class="article-item">
+            <img src="https://images.unsplash.com/photo-1635321593217-40050ad13c74" alt="Hotel Breakfast" class="article-image">
+            <div class="article-content">
+              <div>
+                <h3 class="article-title">At Value-Focused Hotels, The Free Breakfast Gets Bigger</h3>
+                <div class="article-meta">
+                  <span>
+                    <i class="fas fa-user"></i>
+                    Craig Bator
+                  </span>
+                  <span>
+                    <i class="fas fa-calendar"></i>
+                    27 Dec 2020
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+    <script src="../assets/js/menu-click.js"></script>
+    <script src="../assets/js/research.js"></script>
+</body>
+</html>
