@@ -134,7 +134,7 @@
 }
 
 .mic-button:hover {
-    color: #051040;
+    color: #c0c0c0;
 }
 
 .chatbot-title {
@@ -161,7 +161,7 @@
 }
 
 .send-button:hover {
-    color: #0a1f6d;
+    color: #c0c0c0;
 }
 
 /* Scrollbar styling */

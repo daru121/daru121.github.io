@@ -51,8 +51,9 @@
   border-radius: 4px;
   color: white;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   transition: opacity 0.2s;
+  min-width: 60px;
 }
 
 
@@ -62,16 +63,14 @@
 
 .btn-buy {
   background-color: #4CAF50;
-  width: 100%;
-  border-radius: 30px;
-  padding: 12px;
+  border-radius: 4px;
+  padding: 6px 12px;
 }
 
 .btn-sell {
   background-color: #F44336;
-  width: 20%;
-  border-radius: 30px;
-  padding: 12px;
+  border-radius: 4px;
+  padding: 6px 12px;
 }
 
 
