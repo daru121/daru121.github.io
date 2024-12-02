@@ -16,21 +16,24 @@ body {
     flex-direction: column;
     height: 100vh;
     background-color: #FFFFFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 .header {
     text-align: center;
     padding: 1.5rem;
-    background-color: #2563EB;
-    border-bottom: 1px solid #1D4ED8;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E5E7EB;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transparat
 }
 
 .header h1 {
     font-size: 28px;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #1F2937;
     letter-spacing: 0.5px;
-    text-align: center;
+    text-align: left;
     margin-left: 0;
 }   
 
@@ -47,6 +50,7 @@ body {
     padding: 1.5rem;
     border-right: 1px solid #E5E7EB;
     overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.03);
 }
 
 .sidebar h2 {
@@ -71,7 +75,7 @@ body {
 .sidebar input:focus {
     outline: none;
     border-color: #2563EB;
-    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
 .sidebar input::placeholder {
@@ -145,6 +149,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-right: 0;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.02);
 }
 
 .main-content .welcome {
@@ -152,7 +157,7 @@ body {
     padding: 2rem;
     background-color: #FFFFFF;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     width: calc(100% - 300px);
     max-width: 1200px;
     margin-left: 0;
@@ -288,7 +293,7 @@ body {
 
 .main-content .welcome:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 /* Improve transitions */
