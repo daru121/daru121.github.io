@@ -69,17 +69,17 @@ const planDetails = {
     'VIP': {
         monthlyPrice: '0',
         annualPrice: '0',
-        features: ['Live streaming']
+        features: ['Live streaming', 'News', 'Riset']
     },
     'VVIP': {
         monthlyPrice: '99.000',
         annualPrice: '999.000',
-        features: ['Live streaming', 'News', 'Riset']
+        features: ['Live streaming', 'News', 'Riset', 'Chat bot']
     },
     'Nexus': {
         monthlyPrice: '299.000',
         annualPrice: '2.999.000',
-        features: ['Live streaming', 'News', 'Riset', 'Chat bot']
+        features: ['Live streaming', 'News', 'Riset', 'Chat bot', 'IPO']
     }
 };
 
