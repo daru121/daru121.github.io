@@ -67,12 +67,12 @@ document.addEventListener("DOMContentLoaded", function () {
 //POP UP
 const planDetails = {
     'VIP': {
-        monthlyPrice: '0',
-        annualPrice: '0',
+        monthlyPrice: '100.000',
+        annualPrice: '300.000',
         features: ['Live streaming', 'News', 'Riset']
     },
     'VVIP': {
-        monthlyPrice: '99.000',
+        monthlyPrice: '200.000',
         annualPrice: '999.000',
         features: ['Live streaming', 'News', 'Riset', 'Chat bot']
     },
