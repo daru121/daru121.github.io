@@ -67,19 +67,19 @@ document.addEventListener("DOMContentLoaded", function () {
 //POP UP
 const planDetails = {
     'VIP': {
-        monthlyPrice: '0',
-        annualPrice: '0',
-        features: ['Live streaming']
+        monthlyPrice: '100.000',
+        annualPrice: '300.000',
+        features: ['Live streaming', 'News', 'Riset']
     },
     'VVIP': {
-        monthlyPrice: '99.000',
+        monthlyPrice: '200.000',
         annualPrice: '999.000',
-        features: ['Live streaming', 'News', 'Riset']
+        features: ['Live streaming', 'News', 'Riset', 'Chat bot']
     },
     'Nexus': {
         monthlyPrice: '299.000',
         annualPrice: '2.999.000',
-        features: ['Live streaming', 'News', 'Riset', 'Chat bot']
+        features: ['Live streaming', 'News', 'Riset', 'Chat bot', 'IPO']
     }
 };
 
